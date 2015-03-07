@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Priority Task List</title>
+	
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link href="jumbotron-narrow.css" rel="stylesheet">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	
+	<script src="tasklist.js"></script>
+	
+	<style>
+	.high {
+	    background-color: red;
+		background: red;
+		font-size: 160%;
+	}	
+	.medium {
+	    background-color: orange;
+		background: orange;
+		font-size: 160%;
+	}	
+    .low {
+        background-color: black;
+        background: black;   		
+		color: white;
+		font-size: 160%;
+	}
+	
+    .remove {
+	    margin-left: 1em;
+	
+	}
+	</style>
+	
+</head>
+
+<body>
+  <div class="container">
+	  
+    <div class="jumbotron">
+	
+	  <h1 class="well">Priority Task List</h1>
+	
+	  <form action="#" class="lead">
+	    
+		<fieldset class="well">
+		  <label class="label label-primary" for="someitemtext">Enter a Todo</label>
+		  <input type="text" id="someitemtext"></input>
+		</fieldset>
+		<fieldset class="well">
+		  <label class="label label-primary" for="priority">Priority Level</label>
+		  <select name="priority" id="priority">
+            <option value="1" class="btn btn-lg" >High</option>
+            <option value="2" ="btn btn-lg">Medium</option>
+            <option value="3" class="btn btn-lg">Low</option>
+          </select>
+		</fieldset>
+        <fieldset class="well">
+		  <button class="btn btn-lg btn-success" id="add">Add to List</button>
+		</fieldset>
+	  </form>
+	</div>
+	
+	
+
+
+
+	<ul id="messages" class="list-group"></ul>
+
+
+	
+  </div> <!-- /container -->
+</body>
+
+</html>
