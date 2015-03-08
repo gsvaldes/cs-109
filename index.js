@@ -38,6 +38,10 @@ app.get('/todo', function(req, res) {
   res.sendFile(__dirname + '/views/todo.html');
 });
 
+app.get('/map', function(req, res) {
+  res.sendFile(__dirname + '/views/map.html');
+});
+
 
 io.on('connection', function(socket){
   console.log('a user connected');

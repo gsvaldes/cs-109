@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+	    <title> Map Tester</Title>
+	    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <style>
+        body {padding: 0; margin: 0 }
+        html, body { height: 100% }
+        </style>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<style>
+            #map { height: 500px;
+                   width: 1000px;
+            }
+        </style>
+	</head>
+	<body>
+	    <div class="container">
+		    <div>
+	            <div id="map"></div>
+			</div>
+		</div> <!-- /container -->
+		<div id="some_text"></div>
+	
+	
+	<script type ="text/javascript">
+	    // create a map in the "map" div, set the view to a given place and zoom
+        var map = L.map('map').setView([30.260, -97.770], 7);
+		
+	
+	    // create a tile layer sourced from mapbox
+	    L.tileLayer('https://{s}.tiles.mapbox.com/v4/gsvaldes.lc42jp9d/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZ3N2YWxkZXMiLCJhIjoia1R4QjhCVSJ9.dT6pDZZcysDY3zifgWGhVg#6').addTo(map);
+		
+		var marker = L.marker([30.260, -97.770], {title: "Austin"});
+		marker.addTo(map);
+		marker.on('click', function(i){console.log('hey')});
+		
+		// load geojson features from data file
+		$.getJSON('/data/det-centers.json', function(data){
+            L.geoJson(data).addTo(map);
+			console.log(data);
+		});
+		
+		
+	</script>
+	</body>
+	
+</html>
+
+
+gsvaldes.lc42jp9d

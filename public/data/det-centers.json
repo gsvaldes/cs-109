@@ -1,0 +1,74 @@
+{ "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [30.564740, -97.420235]
+      },
+      "properties": {
+        "name": "T. Don Hutto Residential Center",
+	    "company": "Corrections Corporation of America",
+	    "capacity": "490",
+	    "city": "Taylor"
+      }
+    }
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [28.883647, -97.911786]
+      },
+      "properties": {
+        "name": "Karnes County Civil Detention Center",
+	    "company": "GEO Group",
+	    "capacity": "600",
+	    "city": "Karnes"
+      }
+    }
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [28.676527, -99.167118]
+      },
+      "properties": {
+        "name": "South Texas Family Residential Center",
+	    "company": "Corrections Corporation of America",
+	    "capacity": "2400",
+	    "city": "Dilley"
+      }
+    }
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.549528, -97.081435]
+      },
+      "properties": {
+        "name": "Jack Harwell Detention Center",
+	    "company": "LaSalle Southwest Correctional",
+	    "capacity": "816",
+	    "city": "Waco"
+      }
+    }
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [30.698219, -95.005926]
+      },
+      "properties": {
+        "name": "IAH (Polk) Secure Adult Detention Facility",
+	    "company": "Community Education Centers",
+	    "capacity": "1056",
+	    "city": "Livingston"
+      }
+    }
+
+  ]
+}
