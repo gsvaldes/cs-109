@@ -33,7 +33,9 @@
 		
 	
 	    // create a tile layer sourced from mapbox
-	    L.tileLayer('https://{s}.tiles.mapbox.com/v4/gsvaldes.lc42jp9d/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZ3N2YWxkZXMiLCJhIjoia1R4QjhCVSJ9.dT6pDZZcysDY3zifgWGhVg#6').addTo(map);
+	   // L.tileLayer('https://{s}.tiles.mapbox.com/v4/gsvaldes.lc42jp9d/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZ3N2YWxkZXMiLCJhIjoia1R4QjhCVSJ9.dT6pDZZcysDY3zifgWGhVg#6').addTo(map);
+		
+		L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 		
 		var marker = L.marker([30.260, -97.770], {title: "Austin"});
 		marker.addTo(map);
@@ -50,6 +52,3 @@
 	</body>
 	
 </html>
-
-
-gsvaldes.lc42jp9d
