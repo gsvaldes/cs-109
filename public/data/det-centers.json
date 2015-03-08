@@ -4,7 +4,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [30.564740, -97.420235]
+        "coordinates": [-97.420235, 30.564740]
       },
       "properties": {
         "name": "T. Don Hutto Residential Center",
@@ -12,13 +12,13 @@
 	    "capacity": "490",
 	    "city": "Taylor"
       }
-    }
+    },
 
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [28.883647, -97.911786]
+        "coordinates": [-97.911786, 28.883647]
       },
       "properties": {
         "name": "Karnes County Civil Detention Center",
@@ -26,13 +26,13 @@
 	    "capacity": "600",
 	    "city": "Karnes"
       }
-    }
+    },
 
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [28.676527, -99.167118]
+        "coordinates": [-99.167118, 28.676527]
       },
       "properties": {
         "name": "South Texas Family Residential Center",
@@ -40,13 +40,13 @@
 	    "capacity": "2400",
 	    "city": "Dilley"
       }
-    }
+    },
 
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [31.549528, -97.081435]
+        "coordinates": [-97.081435, 31.549528]
       },
       "properties": {
         "name": "Jack Harwell Detention Center",
@@ -54,13 +54,13 @@
 	    "capacity": "816",
 	    "city": "Waco"
       }
-    }
+    },
 
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [30.698219, -95.005926]
+        "coordinates": [-95.005926, 30.698219]
       },
       "properties": {
         "name": "IAH (Polk) Secure Adult Detention Facility",
