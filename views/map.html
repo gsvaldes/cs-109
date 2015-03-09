@@ -30,13 +30,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <span class="navbar-brand" >Texas Immigrant Detention Centers</span>
+            <span class="navbar-brand" id="lead">Texas Immigrant Detention Centers</span>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right">
-			  <button type="submit" class="btn btn-success">English</button>
-              <button type="submit" class="btn btn-success">Español</button>
-            </form>
+            <div class="navbar-form navbar-right">
+			  <button type="submit" class="btn btn-success" id="english">English</button>
+              <button type="submit" class="btn btn-success" id="spanish">Español</button>
+            </div>
           </div><!--/.navbar-collapse -->
         </div>
       </nav>	
@@ -51,8 +51,9 @@
         <div class="row">
           <div>
             <h2 id="some_text"></h2>
-            <p>Holding text</p>
-            <p>holding text</p>
+            <p id="info-1"></p>
+            <p id="info-2"></p>
+			<p id="info-3"></p>
          </div>
         </div>
 	  </div>  
@@ -60,7 +61,20 @@
 	
 	
 	<script type ="text/javascript">
-			
+		var language = "english";
+		var currentId;
+		$("#english").click(function() {
+		    language = "english";
+			console.log("the language is now " + language);
+			switchToEnglish();
+		});
+		$("#spanish").click(function() {
+		    language = "spanish";
+			console.log("the language is now " + language);
+			switchToSpanish();
+		});
+		
+		
 	    // create a tile layer sourced from mapbox
 	    var basemap = L.tileLayer('https://{s}.tiles.mapbox.com/v4/gsvaldes.lc42jp9d/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZ3N2YWxkZXMiLCJhIjoia1R4QjhCVSJ9.dT6pDZZcysDY3zifgWGhVg#6')
 		
@@ -75,6 +89,7 @@
 					
 					layer.on('click', function (e) {              // add click event to every feature
 					    markerClick(feature);
+						getCenterData(feature.properties.id);
                     });
                   }
                 });
@@ -82,9 +97,31 @@
 		});	
 		
 		
+		
 		function markerClick(feature){
 		    console.log('a marker has been clicked' + feature.properties.name);
 			$('#some_text').text(feature.properties.name);
+		}
+		
+		function getCenterData(id){
+		    $.getJSON('data/' + id + '.json', function (data){
+			    $("#info-1").text(data[language].par1);
+				$("#info-2").text(data[language].par2);
+				$("#info-3").text(data[language].par3);
+				currentId = id;
+			    console.log(data[language].par1);
+				console.log(data.spanish)	
+            });				
+		}
+		
+		function switchToEnglish(){
+		    $("#lead").text("Texas Immigrant Detention Centers");
+			getCenterData(currentId);
+		}
+		
+		function switchToSpanish(){
+		    $("#lead").text("Centros de detención de inmigrantes");
+			getCenterData(currentId);
 		}
 		
 	</script>
