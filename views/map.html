@@ -85,12 +85,19 @@
 			basemap.addTo(map);
 		    var geojson = L.geoJson(data, {
 			    onEachFeature: function (feature, layer) {
-				    layer.bindPopup(feature.properties.name + '<br />' + feature.properties.city);
+				    layer.bindPopup(feature.properties.name);
+					layer.on('mouseover', function (e){
+					    this.openPopup();
+					});
+					layer.on('mouseout', function (e){
+					    this.closePopup();
+					});
 					
 					layer.on('click', function (e) {              // add click event to every feature
 					    markerClick(feature);
 						getCenterData(feature.properties.id);
                     });
+
                   }
                 });
 			geojson.addTo(map);
