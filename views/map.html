@@ -17,6 +17,11 @@
             #map { height: 400px;
                    width: 800px;
             }
+			
+			.graphic img {
+                width:100%;
+                height: 230px;
+            }
         </style>
 	</head>
 	<body>	
@@ -53,7 +58,7 @@
             <h2 id="some_text"></h2>
             <p id="info-1" class="col-md-4"></p>
             <p id="info-2" class="col-md-4"></p>
-			<p id="info-3" class="col-md-4"></p>
+			<p id="info-3" class="col-md-4 graphic"><img id="det-img" src=""</p>
          </div>
         </div>
 	  </div>  
@@ -97,6 +102,7 @@
 					    markerClick(feature);
 						getCenterData(feature.properties.id);
                     });
+					
 
                   }
                 });
@@ -114,11 +120,12 @@
 		    $.getJSON('data/' + id + '.json', function (data){
 			    $("#info-1").text(data[language].par1);
 				$("#info-2").text(data[language].par2);
-				$("#info-3").text(data[language].par3);
+				$("#det-img").attr('src', 'images/' + data[language].img);
 				currentId = id;
 			    console.log(data[language].par1);
+				console.log('images/' + data[language].img);
 				console.log(data.spanish)	
-            });				
+            });			
 		}
 		
 		function switchToEnglish(){

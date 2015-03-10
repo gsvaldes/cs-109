@@ -1,12 +1,14 @@
 ﻿{
   "english": {
-    "par1": "harwell information coming soon",
-	"par2": "harwell more information coming soon",
-	"par3": "harwell even more information coming soon"    
+    "par1": "Attorneys in Austin and Waco are sounding the alarm over the conditions at an immigrant detention center in Waco. They say the Jack Harwell Detention Center is not an appropriate place to house immigrants in detention and that Immigration and Customs Enforcement (ICE) officials have not done enough to fix serious problems at the facility. ",
+	"par2": "The Texas Commission on Jail Standards found multiple non-compliance issues at the facility in 2012. The facility is run by a private prison company who expected that the federal government would supply enough immigrant detainees to ensure that the facility was profitable. ",
+	"par3": "harwell even more information coming soon",
+    "img": "harwell.jpg"    
   },
   "spanish": {
     "par1": "harwell información en breve",
 	"par2": "harwell más información en breve",
-	"par3": "harwell aún más información en breve"     
+	"par3": "harwell aún más información en breve",
+    "img": "harwell.jpg" 	
   }
 }

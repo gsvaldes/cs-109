@@ -1,12 +1,14 @@
 ﻿{
   "english": {
-    "par1": "karnes information coming soon",
-	"par2": "karnes more information coming soon",
-	"par3": "karnes even more information coming soon"    
+    "par1": "Texans United for Families and Grassroots Leadership today called on President Obama to immediately halt the expansion of two for-profit south Texas family detention camps and prioritize release of asylum-seeking mothers and children being held in these camps.  A federal court on Friday temporarily blocked the policy of detaining families as a deterrent to future migration and sharply rebuked the administration's national security justification for prolonged detention of refugee families.",
+	"par2": "Since the summer of 2014, Immigration and Customs and Enforcement (ICE) has dramatically expanded the practice of detaining asylum-seeking women and children, mostly from Central America, in prison-like detention camps in Texas.",
+	"par3": "karnes even more information coming soon",
+    "img": "karnes.jpg"    
   },
   "spanish": {
     "par1": "karnes información en breve",
 	"par2": "karnes más información en breve",
-	"par3": "karnes aún más información en breve"     
+	"par3": "karnes aún más información en breve",
+    "img": "karnes.jpg"	
   }
 }

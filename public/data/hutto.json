@@ -1,12 +1,14 @@
 ﻿{
   "english": {
-    "par1": "hutto information coming soon",
-	"par2": "hutto more information coming soon",
-	"par3": "hutto even more information coming soon"    
+    "par1": "This Saturday, Grassroots Leadership joined more than 50 other members and supporters of the Texans United for Families coalition for a vigil at the T. Don Hutto detention center, a private prison in Taylor, Texas.  The vigil marked the 5th anniversary of the long but successful campaign to end the shameful practice of detaining immigrant families — including small children — at the facility.  ",
+	"par2": "The mood was solemn at the vigil as protesters were confronted with the renewal of mass family detention of refugee children and families from Central America.  The Obama Administration has announced the opening of a family detention center in Artesia, New Mexico and has begun detaining families at a GEO Group-operated facility in Karnes County, Texas. The administration has asked for funding for up to 6,300 family detention beds across the country.  ",
+	"par3": "hutto even more information coming soon",
+    "img": "hutto.jpg"	    
   },
   "spanish": {
     "par1": "hutto información en breve",
 	"par2": "hutto más información en breve",
-	"par3": "hutto aún más información en breve"     
+	"par3": "hutto aún más información en breve",
+    "img": "hutto.jpg"	
   }
 }
