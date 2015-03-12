@@ -1,20 +1,6 @@
 function MyLibrary () {
 
-//    var items = [];
 	var LEVEL_CLASSES = {1: 'high', 2: 'medium', 3: 'low'};
-	
-//	function addItem(content, priority){
-//	    var item = {};
-//		item['text'] = content;
-//		item['level'] = priority;
-//		items.push(item);
-//		items.sort(function(a, b){
-//		    return a.level-b.level;   
-//        });	
-//        items.forEach(function(item, i){
-//            item['id'] = 'item' + i;	
-//        });				    	
-//	}
 	
 	function renderItems(outerElement, items){
 	    $(outerElement).empty();
@@ -35,12 +21,6 @@ function MyLibrary () {
 	
 	}
 	
-//	function removeItem(id){
-//	    items = items.filter(function(item){
-//		    return item.id !== id;
-//			});
-//	}
-	
 
 	return {'renderItems': renderItems };
 }
@@ -57,8 +37,6 @@ $(document).ready(function() {
 	$("#add").click( function() {
 	    var txtinput = $("#someitemtext").val();
 		var priority = $("#priority").val();
-		//myLib.addItem(txtinput, priority);
-		//myLib.renderItems('#messages');
 		$("#someitemtext").val('');
 		
 		socket.emit('todo item', {'text': txtinput, 'priority': priority });
@@ -67,8 +45,6 @@ $(document).ready(function() {
 	});
 		
 	$('#messages').on('click', '.remove', function(){
-		//myLib.removeItem($(this).parent().attr('id'));
-		//myLib.renderItems('#messages');
 		
 		socket.emit('removed id', $(this).parent().attr('id'));
 

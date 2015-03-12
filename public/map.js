@@ -4,12 +4,10 @@ $(document).ready(function() {
     var currentId;
     $("#english").click(function() {
         language = "english";
-	    console.log("the language is now " + language);
 	    switchToEnglish();
     });
 	$("#spanish").click(function() {
 		language = "spanish";
-        console.log("the language is now " + language);
 		switchToSpanish();
 	});
 		
@@ -42,11 +40,9 @@ $(document).ready(function() {
             });
 		geojson.addTo(map);
 	});	
-		
-		
+				
 		
 	function markerClick(feature){
-		console.log('a marker has been clicked' + feature.properties.name);
 		$('#some_text').text(feature.properties.name);
 	}
 		
@@ -54,11 +50,10 @@ $(document).ready(function() {
 		$.getJSON('data/' + id + '.json', function (data){
 			$("#info-1").text(data[language].par1);
 		    $("#info-2").text(data[language].par2);
-			$("#det-img").attr('src', 'images/' + data[language].img);
+			$("#det-img").attr('src', 'images/' + data[language].img)
+			.css('display','block');;    // don't show image until one has loaded
+			
 			currentId = id;
-			console.log(data[language].par1);
-		    console.log('images/' + data[language].img);
-			console.log(data.spanish)	
         });			
 	}
 		
